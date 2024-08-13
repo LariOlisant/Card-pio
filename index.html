@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+    <style>
+        .espace{
+            margin: 100px;
+        }
+        .pá{
+            padding: 100px;
+        }
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="color: rgb(169, 154, 132);margin: 50px;">●TABELAS●</h1>
+    <table>
+
+        <tr>
+             <th>ITEM |</th>
+             <th>PREÇO |</th>
+             <th>QUANTIDADE </th>
+        </tr>
+
+        <tr>
+             <td>ITEM 1</td><!--Para formar as colunas-->
+             <td>$10</td>
+             <td>2</td>
+        </tr>
+
+         <tr>
+            <td>ITEM 2</td>
+            <td>15$</td>
+            <td>3</td>
+        <tr>
+
+        <tr>  
+            <td style="color: rgb(169, 154, 132);">TOTAL:</td>
+            <td></td>
+            <td>$25</td>
+        </tr>
+    </table>
+
+    <!--TABELA COM BORDA-->
+        <h1 style="color: rgb(169, 154, 132); margin: 15px;">●TABELA DE ALUNOS●</h1>
+
+        <table class="espace" border="1">
+            <thead>
+                <th>NOME</th>
+                <th>IDADE</th>
+                <th>NOTA</th>
+            </thead>
+            <tbody>  <!--O marcador tbody é o espaço onde são colocadas as linhas dos detalhes, de dados, em uma tabela HTML.-->
+                <tr> <!--A etiqueta <tr> que significa table row é usada para definir uma linha. -->
+                    <td>Cuca Beludo</td> <!--A etiqueta <td> que significa table data é usada para definir uma célula-->
+                    <td>18</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>Ana Konda </td>
+                    <td>19</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td>Paula Tejando </td>
+                    <td>24</td>
+                    <td>10.0</td>
+                </tr>
+            </tbody>
+            </table>
+
+        <!--Exemplo com Colspan e ROwspan. As propiedades Colspan e Rowspan são usadas nas células de uma tabela HTML para combinar várias colunas ou linhas, respectivamente. Elas sáo aplicadas ás tabs <th> ou <td>-->
+
+            <h1 style="color: rgb(169, 154, 132); margin: 15px;">●TABELA DE HORÁRIOS●</h1>
+
+            <table border="2">
+                <tr>
+                    <th colspan="3">Cabeçalho abrangendo três colunas</th><!--=O atributo serve para unir as células da linha-->
+                </tr>
+            </table>
+
+            <table border="2">
+                <thead>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>08:00 - 09:00</td>
+                        <td rowspan="2">Matemática</td>
+                        <td>Português</td>
+                        <td>História</td>
+                        <td>Geografia</td>
+                        <td>Biologia</td>
+                    </tr>
+                    <tr>
+                        <td>09:00 - 10:00</td>
+                        <td rowspan="2">Educação Física</td>
+                        <td rowspan="2">Química</td>
+                        <td rowspan="2">Física</td><!--O atributo Rownpan serve para unir as células da coluna -->
+                        <td>Artes</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:00</td>
+                        <td>Inglês</td>
+                        <td rownpan="2">Matemática</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 12:00</td>
+                        <td>Biologia</td>
+                        <td>História</td>
+                        <td>Português</td>
+                        <td>Filosofia</td>
+                        <td>Sociologia</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+</body>
+</html>
